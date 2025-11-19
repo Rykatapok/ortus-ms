@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ортус: Тени Медицины</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0056b3',
+                        secondary: '#e63946',
+                        accent: '#f4a261'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-gradient-to-r from-primary to-primary-dark text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 px-4 text-center max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">ОРТУС МС: Истинное лицо финансовых афер</h1>
+            <p class="text-xl md:text-2xl mb-8">Этот сайт содержит документальные доказательства мошеннических схем, обманных проектов и финансовых махинаций</p>
+            <a href="#methods" class="inline-block bg-secondary hover:bg-secondary-dark text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                Узнать правду ↓
+            </a>
+        </div>
+    </section>
+
+    <!-- Deception Methods Section -->
+    <section id="methods" class="py-20 px-4 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12 text-primary">Схемы и методы мошенничества</h2>
+        
+        <div class="bg-white shadow-xl rounded-lg p-6 mb-12">
+            <h3 class="text-2xl font-semibold mb-4 text-secondary">Финансовые пирамиды</h3>
+            <ul class="list-disc pl-6 mb-6 space-y-2">
+                <li>Создание фиктивных инвестиционных программ с гарантированными доходами</li>
+                <li>Привлечение средств через сетевой маркетинг по принципу "приведи друга"</li>
+                <li>Отсутствие реальных медицинских проектов за инвестиционными предложениями</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold mb-4 text-secondary">Незаконные операции с недвижимостью</h3>
+            <ul class="list-disc pl-6 mb-6 space-y-2">
+                <li>Продажа одних и тех же медицинских помещений нескольким инвесторам</li>
+                <li>Использование поддельных документов на собственность</li>
+                <li>Махинации с арендными платежами в клиниках-партнерах</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold mb-4 text-secondary">Мошенничество с криптовалютой</h3>
+            <ul class="list-disc pl-6 mb-6 space-y-2">
+                <li>Создание фейкового медицинского блокчейн-проекта</li>
+                <li>Продажа несуществующих токенов "медицинских услуг"</li>
+                <li>Отмывание денег через криптовалютные биржи</li>
+            </ul>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="http://static.photos/finance/1024x576/1" alt="Фиктивный контракт" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h4 class="font-bold text-lg mb-2">Фальшивые инвестиционные контракты</h4>
+                    <p class="text-gray-600">Поддельные документы, предлагающие несуществующие медицинские франшизы</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="http://static.photos/office/1024x576/2" alt="Скриншот переписки" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h4 class="font-bold text-lg mb-2">Компроматирующая переписка</h4>
+                    <p class="text-gray-600">Электронные письма с указаниями по сокрытию финансовых потоков</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chronology Section -->
+    <section class="py-20 px-4 bg-gray-100">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-primary">Хронология мошенничеств</h2>
+            <div class="space-y-8 relative">
+                <!-- Timeline connector -->
+                <div class="absolute left-8 top-0 bottom-0 w-1 bg-primary transform -translate-x-1/2"></div>
+                
+                <!-- Timeline items -->
+                <div class="relative pl-16">
+                    <div class="absolute left-0 w-8 h-8 rounded-full bg-secondary border-4 border-white transform -translate-x-1/2"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl mb-2">2015: Основание компании</h3>
+                        <p>Создание ООО "ОРТУС МС" с заявленной деятельностью в сфере медицинского оборудования. Уже на этом этапе обнаружены первые признаки финансовых нарушений.</p>
+                    </div>
+                </div>
+                
+                <div class="relative pl-16">
+                    <div class="absolute left-0 w-8 h-8 rounded-full bg-secondary border-4 border-white transform -translate-x-1/2"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl mb-2">2017: Первые жалобы инвесторов</h3>
+                        <p>Поступают первые официальные жалобы от инвесторов о невыплате обещанных дивидендов от вложений в "медицинские стартапы".</p>
+                    </div>
+                </div>
+                
+                <div class="relative pl-16">
+                    <div class="absolute left-0 w-8 h-8 rounded-full bg-secondary border-4 border-white transform -translate-x-1/2"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl mb-2">2019: Криптовалютный проект</h3>
+                        <p>Запуск токенизированного проекта "Медицинский блокчейн", который оказался финансовой пирамидой с убытками инвесторов более 50 млн рублей.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evidence Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-primary">Фото и документальные доказательства</h2>
+            <p class="text-center mb-12 max-w-2xl mx-auto">Представленные ниже материалы являются прямым доказательством противоправной деятельности компании "ОРТУС МС" и ее руководства.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="http://static.photos/document/640x360/1" alt="Фальшивый сертификат" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold mb-2">Поддельный сертификат</h4>
+                        <p class="text-sm text-gray-600">Сертификат соответствия медицинского оборудования, выявленный как подделка</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="http://static.photos/document/640x360/2" alt="Банковская выписка" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold mb-2">Подозрительные транзакции</h4>
+                        <p class="text-sm text-gray-600">Выписка со счета с переводами в офшорные зоны</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="http://static.photos/document/640x360/3" alt="Электронная переписка" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold mb-2">Внутренняя переписка</h4>
+                        <p class="text-sm text-gray-600">Электронные письма с обсуждением схем ухода от налогов</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="http://static.photos/document/640x360/4" alt="Контракт" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold mb-2">Двойные контракты</h4>
+                        <p class="text-sm text-gray-600">Один и тот же объект недвижимости продан разным покупателям</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="http://static.photos/document/640x360/5" alt="Реклама" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold mb-2">Вводящая в заблуждение реклама</h4>
+                        <p class="text-sm text-gray-600">Объявления с завышенными показателями доходности</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="http://static.photos/document/640x360/6" alt="Фото оборудования" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold mb-2">Несуществующее оборудование</h4>
+                        <p class="text-sm text-gray-600">Фотошоп-изображения медицинской техники, которой нет в реальности</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-8">
+                <p>© 2024 Разоблачение деятельности "ОРТУС МС"</p>
+            </div>
+            <div class="text-center text-gray-400 text-sm">
+                <p>Вся информация на этом сайте основана на документальных свидетельствах</p>
+                <p class="mt-2">Для связи с исследовательской группой: info@ortus-expose.ru</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>feather.replace();</script>
+</body>
+</html>
