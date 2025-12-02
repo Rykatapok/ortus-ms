@@ -70,21 +70,179 @@
                 <h3 class="text-2xl font-semibold mb-4 text-secondary">Коррупционная схема откатов</h3>
                 <p class="mb-4">В холдинге существует коррупционная схема начисления откатов за отгрузку товаров в больницы. Систему полностью контролирует директор Макаров Ярослав Юрьевич и о ней в курсе все менеджеры. Расчет откатов встроен в управленческую систему.</p>
                 
-                <h4 class="text-xl font-semibold mb-3 text-accent">Термины, принятые в системе откатов:</h4>
+                <h4 class="text-xl font-semibold mb-3 text-accent">Схема работы:</h4>
                 <ul class="list-disc pl-6 mb-6 space-y-2">
-                    <li>Маркетинговый фонд</li>
-                    <li>Постоянные маркетинговые отчисления</li>
-                    <li>Нерегулярные маркетинговые отчисления</li>
+                    <li>Региональный менеджер договаривается с представителем в больнице о преференциях и суммах вознаграждений.</li>
+                    <li>Чаще всего за конкретной больницей закрепляется ставка в процентах от суммы продажи, но возможны договорённости на другие проценты или сумму по каждой конкретной отгрузке.</li>
+                    <li>Далее отыгрываются аукционы. По каждой выполненной и оплаченной отгрузке по аукциону, начисляются суммы откатов, по ранее оговоренным процентам от суммы отгрузки.</li>
+                    <li>Раз в месяц директор Макаров получает отчет из учетной (бухгалтерской) системы по начисленным суммам откатов, по каждому мед. учреждению.</li>
+                    <li>Согласно отчету, директор Макаров обналичивает необходимую сумму через обнальные конторы и ИП, уходя таким образом от налогов, и получая необходимую сумму наличных.</li>
+                    <li>Далее он выдает рассчитанные суммы по больницам региональным менеджерам, за которыми закреплены больницы, региональный менеджер оформляет командировку, если это другой город и отвозит наличные конкретным должностным лицам в больницах, с которыми были заключены договоренности на предыдущих этапах.</li>
+                    <li>Все расчеты откатов, описанные выше, выполняются автоматически в учетной системе холдинга. Суммы откатов включены в расчет рентабельности каждой отгрузки в виде статей затрат. Статьи затрат замаскированы под «маркетинг» и называются:
+                        <ul class="list-circle pl-6 mt-2 space-y-1">
+                            <li><strong>«Постоянные маркетинговые отчисления»</strong> - если начисления были рассчитаны по закрепленной постоянной ставке</li>
+                            <li><strong>«Нерегулярные маркетинговые отчисления»</strong> - если начисления были рассчитаны по отдельной особой договоренности на отгрузку</li>
+                            <li><strong>«Доп. расходы на маркетинг»</strong> - в этой статье зашиты расходы на обналичку</li>
+                        </ul>
+                    </li>
                 </ul>
 
-                <h4 class="text-xl font-semibold mb-3 text-accent">Механизм работы системы:</h4>
-                <ul class="list-disc pl-6 mb-6 space-y-2">
-                    <li>При каждом создании документа «заказ клиента», система автоматически регистрирует в заказе действующую по клиенту на момент отгрузки ставку «Постоянные маркетинговые отчисления»</li>
-                    <li>Менеджер по продажам может установить произвольный процент или сумму «Нерегулярного маркетингового отчисления» по указанию руководства</li>
-                    <li>Директор создает документы поступления в «маркетинговый фонд», система автоматически рассчитывает суммы откатов</li>
-                    <li>Регулярно создаются документы выплаты из маркетингового фонда конкретным сотрудникам для передачи денег клиентам</li>
-                    <li>Доступ к документам фонда имеет только Макаров Ярослав Юрьевич</li>
-                </ul>
+                <h4 class="text-xl font-semibold mb-3 text-accent">Текущие ставки «постоянных маркетинговых отчислений» по больницам:</h4>
+                <div class="overflow-x-auto mb-6">
+                    <table class="min-w-full bg-white border border-gray-300 text-sm">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="py-2 px-4 border-b border-gray-300 text-left">Партнер</th>
+                                <th class="py-2 px-4 border-b border-gray-300 text-left">ИНН</th>
+                                <th class="py-2 px-4 border-b border-gray-300 text-left">КПП</th>
+                                <th class="py-2 px-4 border-b border-gray-300 text-right">Процент</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">23 ЦГКБ, ГАУЗ СО</td>
+                                <td class="py-2 px-4 border-b border-gray-300">6663018740</td>
+                                <td class="py-2 px-4 border-b border-gray-300">668601001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold">10</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">ТООД</td>
+                                <td class="py-2 px-4 border-b border-gray-300">7203000538</td>
+                                <td class="py-2 px-4 border-b border-gray-300">720301001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold">10</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">РЖД-МЕДИЦИНА Г. ЧЕЛЯБИНСК ЧУЗ</td>
+                                <td class="py-2 px-4 border-b border-gray-300">7451207988</td>
+                                <td class="py-2 px-4 border-b border-gray-300">745101001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold">10</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">АЛАПАЕВСКАЯ ЦРБ ГАУЗ СО</td>
+                                <td class="py-2 px-4 border-b border-gray-300">6635006422</td>
+                                <td class="py-2 px-4 border-b border-gray-300">667701001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold">5</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">НЯГАНСКАЯ ОКРУЖНАЯ БОЛЬНИЦА БУ</td>
+                                <td class="py-2 px-4 border-b border-gray-300">8610010212</td>
+                                <td class="py-2 px-4 border-b border-gray-300">861001001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold">10</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">СОКБ №1 Екатеринбург</td>
+                                <td class="py-2 px-4 border-b border-gray-300">6658081585</td>
+                                <td class="py-2 px-4 border-b border-gray-300">665801001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold">15</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">ТО ОКБ № 1</td>
+                                <td class="py-2 px-4 border-b border-gray-300">7203000249</td>
+                                <td class="py-2 px-4 border-b border-gray-300">720301001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold">10</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">ЕМНТК</td>
+                                <td class="py-2 px-4 border-b border-gray-300">6658018488</td>
+                                <td class="py-2 px-4 border-b border-gray-300">665801001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold">3</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">МЕДИНВЕСТ ООО Ч</td>
+                                <td class="py-2 px-4 border-b border-gray-300">7445011761</td>
+                                <td class="py-2 px-4 border-b border-gray-300">744701001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold">10</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">НИИ МНТК МИКРОХИРУРГИЯ ГЛАЗА ИМ. АКАД. С.Н. ФЕДОРОВА</td>
+                                <td class="py-2 px-4 border-b border-gray-300">7713059497</td>
+                                <td class="py-2 px-4 border-b border-gray-300">771301001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold">10</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">КОГВВ ГБУ</td>
+                                <td class="py-2 px-4 border-b border-gray-300">4501019930</td>
+                                <td class="py-2 px-4 border-b border-gray-300">450101001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold">5</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">МКМЦ БОНУМ ГАУЗ СО</td>
+                                <td class="py-2 px-4 border-b border-gray-300">6658090050</td>
+                                <td class="py-2 px-4 border-b border-gray-300">667101001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold">5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="text-center mb-6">
+                    <p class="text-gray-600 text-sm">И многие другие медицинские учреждения с аналогичными процентными ставками от 3% до 15%</p>
+                </div>
+
+                <h4 class="text-xl font-semibold mb-3 text-accent">Пример откатов по региональному менеджеру:</h4>
+                <p class="mb-3">Заместитель директора Савинская Юлия Сергеевна (офтальмология):</p>
+                <div class="overflow-x-auto mb-6">
+                    <table class="min-w-full bg-white border border-gray-300 text-sm">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="py-2 px-4 border-b border-gray-300 text-left">Клиент</th>
+                                <th class="py-2 px-4 border-b border-gray-300 text-left">ИНН</th>
+                                <th class="py-2 px-4 border-b border-gray-300 text-left">КПП</th>
+                                <th class="py-2 px-4 border-b border-gray-300 text-right">Сумма откатов</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">ТООД</td>
+                                <td class="py-2 px-4 border-b border-gray-300">7203000538</td>
+                                <td class="py-2 px-4 border-b border-gray-300">720301001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">10 144 961</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">ОКРУЖНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА БУ</td>
+                                <td class="py-2 px-4 border-b border-gray-300">8601004445</td>
+                                <td class="py-2 px-4 border-b border-gray-300">860101001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">7 426 424</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">СОКБ №1 Екатеринбург</td>
+                                <td class="py-2 px-4 border-b border-gray-300">6658081585</td>
+                                <td class="py-2 px-4 border-b border-gray-300">665801001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">5 217 003</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">23 ЦГКБ, ГАУЗ СО</td>
+                                <td class="py-2 px-4 border-b border-gray-300">6663018740</td>
+                                <td class="py-2 px-4 border-b border-gray-300">668601001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">3 264 729</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">НИЖНЕВАРТОВСКАЯ ОКРУЖНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА БУ</td>
+                                <td class="py-2 px-4 border-b border-gray-300">8603005902</td>
+                                <td class="py-2 px-4 border-b border-gray-300">860301001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">2 918 296</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">СУРГУТСКАЯ ОКРУЖНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА БУ</td>
+                                <td class="py-2 px-4 border-b border-gray-300">8617005645</td>
+                                <td class="py-2 px-4 border-b border-gray-300">860201001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">1 363 579</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">ТО ОКБ № 1</td>
+                                <td class="py-2 px-4 border-b border-gray-300">7203000249</td>
+                                <td class="py-2 px-4 border-b border-gray-300">720301001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">1 176 270</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">ЧОКБ ГБУЗ</td>
+                                <td class="py-2 px-4 border-b border-gray-300">7453013642</td>
+                                <td class="py-2 px-4 border-b border-gray-300">745301001</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">1 071 457</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
                 <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-6">
                     <p class="font-semibold">Общая сумма выплаченных откатов за один год составляет:</p>
@@ -94,19 +252,8 @@
             </div>
 
             <div class="mb-8">
-                <h3 class="text-2xl font-semibold mb-4 text-secondary">Ответственные лица и медицинские учреждения</h3>
-                
-                <h4 class="text-xl font-semibold mb-3 text-accent">Заместитель директора Савинская Юлия Сергеевна (офтальмология):</h4>
-                <ul class="list-disc pl-6 mb-6 space-y-2">
-                    <li>ИНН 6658081585 - ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ СВЕРДЛОВСКОЙ ОБЛАСТИ "СВЕРДЛОВСКАЯ ОБЛАСТНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА №1" - Дядин Глеб Георгиевич</li>
-                    <li>ИНН 8617005645 - БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ХАНТЫ-МАНСИЙСКОГО АВТОНОМНОГО ОКРУГА - ЮГРЫ "СУРГУТСКАЯ ОКРУЖНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА" - Понаморенко Светлана Ивановна</li>
-                    <li>ИНН 8601004445 - БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ХАНТЫ-МАНСИЙСКОГО АВТОНОМНОГО ОКРУГА - ЮГРЫ "ОКРУЖНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА" - Артеменко Михаил Сергеевич</li>
-                    <li>ИНН 7203000249 - ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ТЮМЕНСКОЙ ОБЛАСТИ "ОБЛАСТНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА № 1" - Заведующий офтальм отделения</li>
-                    <li>ИНН 7453013642 - ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "ЧЕЛЯБИНСКАЯ ОБЛАСТНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА" - Кузнецов Андрей Александрович</li>
-                    <li>ИНН 6663018740 - ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ СВЕРДЛОВСКОЙ ОБЛАСТИ "ЦЕНТРАЛЬНАЯ ГОРОДСКАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА № 23 ГОРОД ЕКАТЕРИНБУРГ" - Гл врач</li>
-                </ul>
-
-                <h4 class="text-xl font-semibold mb-3 text-accent">Менеджер Голдберг (Маренников) Сергей (служба крови):</h4>
+                <h3 class="text-2xl font-semibold mb-4 text-secondary">Другие менеджеры по офтальмологии:</h3>
+                <p class="mb-4">Менеджер Голдберг (Маренников) Сергей (служба крови) также осуществлял выплаты откатов по следующим медицинским учреждениям:</p>
                 <ul class="list-disc pl-6 mb-6 space-y-2">
                     <li>ИНН 1326135615 - ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ РЕСПУБЛИКИ МОРДОВИЯ "МОРДОВСКАЯ РЕСПУБЛИКАНСКАЯ СТАНЦИЯ ПЕРЕЛИВАНИЯ КРОВИ"</li>
                     <li>ИНН 1659013660 - ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ "РЕСПУБЛИКАНСКАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА МИНИСТЕРСТВА ЗДРАВООХРАНЕНИЯ РЕСПУБЛИКИ ТАТАРСТАН"</li>
@@ -128,12 +275,11 @@
                 <div class="grid md:grid-cols-2 gap-6 mb-6">
                     <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
                         <h4 class="font-bold text-lg mb-2 text-red-700">Служба крови</h4>
-                        <p class="text-red-600 font-semibold">Накрутка 80-150%</p>
-                        <p class="text-sm text-gray-600">Есть примеры, где накрутка превышает 200%</p>
+                        <p class="text-red-600 font-semibold">Накрутка 80-200%</p>
                     </div>
                     <div class="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-500">
                         <h4 class="font-bold text-lg mb-2 text-orange-700">Офтальмология</h4>
-                        <p class="text-orange-600 font-semibold">Накрутка 20-100%</p>
+                        <p class="text-orange-600 font-semibold">Накрутка до 100%</p>
                     </div>
                 </div>
             </div>
@@ -150,7 +296,7 @@
                                 <th class="py-2 px-4 border-b border-gray-300 text-right">Выручка</th>
                                 <th class="py-2 px-4 border-b border-gray-300 text-right">Себестоимость</th>
                                 <th class="py-2 px-4 border-b border-gray-300 text-right">Валовая прибыль</th>
-                                <th class="py-2 px-4 border-b border-gray-300 text-right">Рентабельность, %</th>
+                                <th class="py-2 px-4 border-b border-gray-300 text-right">Рентабельность%</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -210,13 +356,48 @@
                                 <td class="py-2 px-4 border-b border-gray-300 text-right">20 904 616,67</td>
                                 <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-green-600">45,72</td>
                             </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">ПКСПК ГБУЗ</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">82 764 819,50</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">54 086 414,00</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">28 678 405,50</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-green-600">34,65</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">ОКРУЖНАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА БУ</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">56 939 204,99</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">34 085 185,13</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">22 854 019,86</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-green-600">40,14</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">ГКУЗ КЦК</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">43 559 000,00</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">28 226 416,80</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">15 332 583,20</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-green-600">35,20</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">ЕМНТК</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">80 064 092,11</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">65 244 198,12</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">14 819 893,99</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-green-600">18,51</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">РЖД-МЕДИЦИНА Г. ЧЕЛЯБИНСК ЧУЗ</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">20 314 166,55</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">9 805 162,36</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">10 509 004,19</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-green-600">51,73</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
                 
                 <div class="mt-4 bg-yellow-50 border-l-4 border-yellow-500 p-4">
                     <p class="font-semibold text-yellow-700">Важное пояснение:</p>
-                    <p class="text-sm text-yellow-600">В дополнительных расходах заложены откаты. Если их убрать, то реальная рентабельность будет еще выше. Рентабельность - это соотношение выручки к затратам. А наценка (накрутка стоимости) может достигать 100%.</p>
+                    <p class="text-sm text-yellow-600">В себестоимости заложены откаты. Если их убрать, то реальная рентабельность будет еще выше. Рентабельность - это соотношение выручки к затратам. А наценка (накрутка стоимости) может достигать 100%.</p>
                 </div>
             </div>
 
@@ -225,7 +406,7 @@
                 <p class="mb-4">На товары по крови, которые в условиях СВО очень востребованы, компания устанавливает завышенные цены.</p>
                 <p class="mb-4">Нужно посмотреть аукционы, например по этим же больницам, на те же товары по службе крови. И задаться вопросом, а почему ТОЛЬКО эти компании, в частности ООО "ОРТУС", выигрывают эти аукционы, причем без падений.</p>
                 
-                <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-lg">
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-lg mb-6">
                     <h4 class="font-bold text-lg mb-2 text-blue-700">Пример аукциона:</h4>
                     <p class="mb-2"><strong>Номер аукциона:</strong> 0139200000124011912</p>
                     <p class="mb-2"><strong>Ссылка на госзакупки:</strong></p>
@@ -234,6 +415,14 @@
                        target="_blank">
                        https://zakupki.gov.ru/epz/order/notice/ea20/view/documents.html?regNumber=0139200000124011912
                     </a>
+                </div>
+
+                <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded-lg">
+                    <h4 class="font-bold text-lg mb-2 text-red-700">Расчет рентабельности по аукциону:</h4>
+                    <p class="mb-2">По этому аукциону видно, что накрутка составляет 85-101%.</p>
+                    <p class="mb-2"><strong>Сумма отката только за эту отгрузку:</strong> 871 000 рублей</p>
+                    <p class="mb-2"><strong>Сумма ухода от налогов:</strong> 113 000 рублей</p>
+                    <p class="text-sm text-red-600">И это только один пример, а таких отгрузок тысячи.</p>
                 </div>
             </div>
         </div>
@@ -244,11 +433,155 @@
         <h2 class="text-3xl font-bold text-center mb-12 text-primary">Обналичка</h2>
         
         <div class="bg-white shadow-xl rounded-lg p-6 mb-12">
-            <p class="text-center text-gray-600 mb-8">Информация о схемах обналичивания средств будет добавлена в ближайшее время</p>
-            <div class="text-center">
-                <div class="inline-block bg-gray-100 rounded-lg px-4 py-2">
-                    <span class="text-gray-500">Раздел в разработке</span>
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold mb-4 text-secondary">Схемы обналичивания средств</h3>
+                <p class="mb-4">Схема обналички выстроена незатейливо, что показывает коррупционную составляющую в налоговых органах. Т.к. подобные схемы уже очень давно известны и пресекаются при нормальной работе налоговой.</p>
+                <p class="mb-4">Компании холдинга десятками тысяч закупают у различных ИП «Термоконтейнеры», которых никто никогда в глаза не видел, как на предприятиях холдинга, также и в тех ИП, в которых они закупаются, и неизвестно существуют ли такие контейнеры в природе.</p>
+                <p class="mb-4">Вторая схема, это доставка, которая также закупается у различных ИП, суммы доставок больше чем оборот у многих транспортных компаний. Возникает вопрос, если это правдивые перевозки, то почему не заключить контракт с известными транспортными компаниями, и не получить скидку за такие объемы?</p>
+                
+                <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-6">
+                    <h4 class="font-bold text-lg mb-2 text-red-700">Итоговые суммы за период с 18.01.2024 по 05.09.2025:</h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-white p-3 rounded-lg border border-red-200">
+                            <p class="text-sm text-gray-600">Закуп термоконтейнеров</p>
+                            <p class="text-xl font-bold text-red-600">121 806 895 ₽</p>
+                        </div>
+                        <div class="bg-white p-3 rounded-lg border border-red-200">
+                            <p class="text-sm text-gray-600">Закуп "Доставки"</p>
+                            <p class="text-xl font-bold text-red-600">198 240 494,8 ₽</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-red-200">
+                        <p class="font-semibold">Общая сумма:</p>
+                        <p class="text-2xl font-bold text-red-700">320 047 389,8 ₽</p>
+                        <p class="text-sm text-gray-600">(Триста двадцать миллионов сорок семь тысяч триста восемьдесят девять рублей за 1,5 года)</p>
+                    </div>
                 </div>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold mb-4 text-secondary">Поставщики несуществующих термоконтейнеров</h3>
+                <div class="overflow-x-auto mb-6">
+                    <table class="min-w-full bg-white border border-gray-300">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="py-2 px-4 border-b border-gray-300 text-left">ИНН</th>
+                                <th class="py-2 px-4 border-b border-gray-300 text-left">Наименование</th>
+                                <th class="py-2 px-4 border-b border-gray-300 text-right">Сумма</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">590200440754</td>
+                                <td class="py-2 px-4 border-b border-gray-300">Индивидуальный предприниматель Александров Максим Владимирович</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">71 792 960</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">667108796674</td>
+                                <td class="py-2 px-4 border-b border-gray-300">ИП Воронин Андрей Валерьевич</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">16 570 570</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">665802684246</td>
+                                <td class="py-2 px-4 border-b border-gray-300">ИП Вылегжанина Илона Юрьевна</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">13 748 850</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">666301003956</td>
+                                <td class="py-2 px-4 border-b border-gray-300">ИП Коростылева Наталья Вячеславовна</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">11 836 006</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">6670376313</td>
+                                <td class="py-2 px-4 border-b border-gray-300">ООО "АЛЬФА 96"</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">70 870</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">5902851390</td>
+                                <td class="py-2 px-4 border-b border-gray-300">ООО "САТИ"</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">7 756 000</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">7720332203</td>
+                                <td class="py-2 px-4 border-b border-gray-300">ООО "ТК АЗТЕК"</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">1 559</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">6678111661</td>
+                                <td class="py-2 px-4 border-b border-gray-300">ООО "ЦТМ"</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right">30 080</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold mb-4 text-secondary">Поставщики несуществующих доставок</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border border-gray-300">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="py-2 px-4 border-b border-gray-300 text-left">ИНН</th>
+                                <th class="py-2 px-4 border-b border-gray-300 text-left">Наименование</th>
+                                <th class="py-2 px-4 border-b border-gray-300 text-right">Сумма</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">661910528173</td>
+                                <td class="py-2 px-4 border-b border-gray-300">ИП Сыропятов Кирилл Валерьевич</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">52 123 599</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">667909519337</td>
+                                <td class="py-2 px-4 border-b border-gray-300">ИП Ермаков Дмитрий Вячеславович</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">12 954 678</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">662339601933</td>
+                                <td class="py-2 px-4 border-b border-gray-300">ИП Брезгин Никита Дмитриевич</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">11 755 619</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">665404424111</td>
+                                <td class="py-2 px-4 border-b border-gray-300">ИП Белоносов Вадим Владимирович</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">9 236 900</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">666304617545</td>
+                                <td class="py-2 px-4 border-b border-gray-300">ИП Шаламова Светлана Васильевна</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">8 272 830</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">743014241408</td>
+                                <td class="py-2 px-4 border-b border-gray-300">ИП Сухов Георгий Вячеславович</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">8 119 054</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">661904588537</td>
+                                <td class="py-2 px-4 border-b border-gray-300">ИП Михайлов Тимур Теймурович</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">8 037 016</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">661910748676</td>
+                                <td class="py-2 px-4 border-b border-gray-300">ИП Мотыхляев Станислав Витальевич</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">7 365 595</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">740203586924</td>
+                                <td class="py-2 px-4 border-b border-gray-300">ИП Беляев Алексей Александрович</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">7 060 481</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-300">661933483440</td>
+                                <td class="py-2 px-4 border-b border-gray-300">Ишмекеев Эдуард Игоревич</td>
+                                <td class="py-2 px-4 border-b border-gray-300 text-right font-semibold text-red-600">6 904 948</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="mt-4 text-sm text-gray-600">И многие другие поставщики с суммами от 500 000 до 5 000 000 рублей</p>
             </div>
         </div>
     </section>
@@ -283,7 +616,7 @@
 
     <!-- Боровков Section -->
     <section id="borovkov" class="py-20 px-4 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-12 text-primary">Денис Вячеславович Боровков - адвокат</h2>
+        <h2 class="text-3xl font-bold text-center mb-12 text-primary">Боровков</h2>
         
         <div class="bg-white shadow-xl rounded-lg p-6 mb-12">
             <div class="mb-8">
